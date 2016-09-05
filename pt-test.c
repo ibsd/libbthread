@@ -50,6 +50,7 @@ void *child(void *arg) {
 		
 		usleep(100);
 	}
+	return NULL;
 }
 
 void set_print(void) {

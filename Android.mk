@@ -15,7 +15,7 @@ LOCAL_CFLAGS:= -ffunction-sections -fdata-sections
 
 LOCAL_MODULE:= libbthread
 
-include $(BUILD_STATIC_LIBRARY)
+include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 
@@ -27,5 +27,7 @@ LOCAL_C_INCLUDES:=libbthread/
 LOCAL_CFLAGS:= -ffunction-sections -fdata-sections
 
 LOCAL_MODULE:= bthread_test
+
+LOCAL_MODULE_TAGS := test
 
 include $(BUILD_EXECUTABLE)

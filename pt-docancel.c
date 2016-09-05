@@ -21,6 +21,9 @@
 
 #include <pt-internal.h>
 
+#define SIGTERM 15
+#define SIGRTMIN 32
+
 static void
 call_exit (void)
 {
